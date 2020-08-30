@@ -26,7 +26,7 @@
     sudo mkfs.ext4 /dev/mapper/vg1-lv1
     ```
 8. Add an `fstab entry` to automatically mount the *Logical Volume*'s filesystem at boot time. Replace `<MOUNT-POINT>` with a directory path 
-(e.g. `/sftponly` in case you come from the [Setup SFTP server](https://github.com/guallo/recipes/-/blob/master/setup-sftp-server.md#setup-sftp-server-tested-on-ubuntu-server-2004) recipe):
+(e.g. `/sftponly` in case you come from the [Setup SFTP server](https://github.com/guallo/recipes/blob/master/setup-sftp-server.md#setup-sftp-server-tested-on-ubuntu-server-2004) recipe):
     ```bash
     sudo tee -a /etc/fstab > /dev/null <<< '/dev/mapper/vg1-lv1 <MOUNT-POINT> ext4 defaults 0 0'
     ```

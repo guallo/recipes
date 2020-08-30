@@ -10,7 +10,7 @@
     sudo mkdir /sftponly
     ```
 
-3. Only if you have a dedicated clean `ext4` filesystem mounted on directory `/sftponly` (**recommended**, also you might want to see how to [Setup a Logical Volume](https://github.com/guallo/recipes/-/blob/master/setup-logical-volume.md#setup-a-logical-volume-using-lvm2-tested-on-ubuntu-server-2004)):
+3. Only if you have a dedicated clean `ext4` filesystem mounted on directory `/sftponly` (**recommended**, also you might want to see how to [Setup a Logical Volume](https://github.com/guallo/recipes/blob/master/setup-logical-volume.md#setup-a-logical-volume-using-lvm2-tested-on-ubuntu-server-2004)):
     ```bash
     sudo chown root:root /sftponly
     sudo chmod 755 /sftponly
